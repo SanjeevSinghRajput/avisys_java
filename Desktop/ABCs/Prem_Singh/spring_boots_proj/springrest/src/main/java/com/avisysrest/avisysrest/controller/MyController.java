@@ -34,7 +34,7 @@ public class MyController {
 	// Rest api method for retrieve course id
 	@GetMapping("/courses/{courseId}")
 	public Course getCourse(@PathVariable String courseId) {
-		return this.service.getCourse(Long.parseLong(courseId));
+		return this.service.findYourEntityClassById(Long.parseLong(courseId));
 
 	}
 
